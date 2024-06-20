@@ -10,7 +10,7 @@ Or manual installation:
 
 ```bash
 gem install homesick --user-install
-export PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 homesick destroy dotfiles
 homesick clone decors/dotfiles
 homesick link dotfiles
